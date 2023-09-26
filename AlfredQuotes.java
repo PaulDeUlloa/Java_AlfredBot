@@ -15,8 +15,16 @@ public class AlfredQuotes {
     }
     
     public String respondBeforeAlexis(String conversation) {
-        return "for snarky response return string";
+        if(conversation.indexOf("Alexis") > -1){
+            return "She's not that helpful today. What can I get for you?";
+        }
+
+        if(conversation.indexOf("Alfred") > -1) {
+            return "At your service. How may I be of service?";
+        }
+        return "Ok. And maybe i'll retire after that";
     }
+
     
 	// NINJA BONUS
 	// See the specs to overload the guestGreeting method
