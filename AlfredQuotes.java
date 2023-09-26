@@ -11,12 +11,10 @@ public class AlfredQuotes {
     }
     
     public String dateAnnouncement() {
-        // YOUR CODE HERE
-        return "placeholder for date announcement return string";
+        return String.format("It is currently %s", new Date());
     }
     
     public String respondBeforeAlexis(String conversation) {
-        // YOUR CODE HERE
         return "for snarky response return string";
     }
     
